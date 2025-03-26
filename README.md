@@ -2,6 +2,8 @@
 
 Este repositório tem como objetivo servir como um ambiente de experimentação para testes e validação de aplicações desenvolvidas no contexto da pós-graduação em Inteligência Artificial e Aprendizado de Máquina. Aqui serão exploradas diferentes técnicas, modelos e abordagens voltadas para soluções inovadoras nessas áreas.
 
+Os estudos de caso serão baseados em análises preditivas, prescritivas e análises com ferramentas especializadas, visando a aplicação prática de conceitos teóricos e metodologias avançadas.
+
 ## Estrutura do Repositório
 - **/datasets**: Conjunto de dados utilizados para experimentos e testes.
 - **/notebooks**: Jupyter Notebooks contendo experimentos, análises e modelos treinados.
