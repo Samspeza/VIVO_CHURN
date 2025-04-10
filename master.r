@@ -1,8 +1,3 @@
-#Versão do R
-from dbm.ndbm import library
-from gettext import install
-
-
 R.version.string
 #Pacotes necessarios - instalação
 install.packages('tidyverse') #manipulação de dados
@@ -25,7 +20,7 @@ summary(dados)
 #Check dados faltantes e retirar
 colSums(is.na(dados)) #se nulo
 dados_1 <- dados[!is.na(dados$TotalCharges),]
-#diferente de nulo para o novo data frame (dados_1)
+ #diferente de nulo para o novo data frame (dados_1)
 colSums(is.na(dados_1))
 glimpse(dados_1)
 
@@ -181,7 +176,6 @@ select(Churn) %>%
 group_by(Churn) %>%
 summarise(n = n())
 
-
 #stepwize
 #verificar quais as variaveis agregam ao modelo
 modelo_teste1 <- glm(data = dados_num_balanc, Churn ~ .,family=binomial)
@@ -226,7 +220,7 @@ matrix_reg <-
 confusionMatrix(data = reg_log_pred1$reg_log_pred, reference = vivoTrain$Churn, positive = "evadido")
 matrix_reg$table
 metricas <- data.frame(matrix_reg$byClass)
-                       
+
 glimpse(dados_1)
 #excluir o ID
 #transformar em qualitativa as quantitativas
@@ -252,7 +246,7 @@ q2_TotalCharges,
 q3_TotalCharges,
 max_TotalCharges))) -> dados_quali
 summary(dados_quali$TotalCharges)
-        
+
 #balanceamento da base
 glimpse(dados_quali)
 dados_quali %>%
