@@ -224,7 +224,6 @@ metricas <- data.frame(matrix_reg$byClass)
 glimpse(dados_1)
 #excluir o ID
 #transformar em qualitativa as quantitativas
-#Adicionar classes as variáveis numericas
 dados_1 %>%
 mutate (SeniorCitizen = as.factor(ifelse(SeniorCitizen == 1, "Yes", "No")),
 customerID = NULL) -> dados_quali
