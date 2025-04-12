@@ -1,16 +1,9 @@
-R.version.string
-#Pacotes necessarios - instalação
-install.packages('tidyverse') #manipulação de dados
-install.packages('ggplot2') #visualização
-install.packages('cowplot') #visualização - unir gráficos
-install.packages('caret') #modelos estatísticos
-install.packages('corrplot') #matriz de correlação
-#chamndo os pacotes ja instalados
 library(caret)
 library(tidyverse)
 library(ggplot2)
 library(cowplot)
 library(corrplot)
+
 
 #carregando dados para o Data Frame (dados)
 dados <-read.csv("VIVO_CHURN.csv", stringsAsFactors = T)
