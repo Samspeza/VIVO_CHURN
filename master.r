@@ -72,7 +72,7 @@ Partner = as.factor(ifelse(Partner == "Yes",1,0)),
 Dependents = as.factor(ifelse(Dependents == "Yes",1,0)),
 PaperlessBilling = as.factor(ifelse(TechSupport == "Yes",1,0)),
 Dependents = as.factor(ifelse(Dependents == "Yes",1,0)),
-Churn = as.factor(ifelse(Churn == "Yes",1,0)),
+Churn = as.factor(ifelse(Churn == "Yes",1,0)),2
 ) -> dados_quant
 glimpse(dados_quant)
 
