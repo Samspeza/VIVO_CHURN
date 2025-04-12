@@ -93,7 +93,7 @@ dummy_dados <- predict(dummy, dummy_dados)
 dados_quant1 <- bind_cols(dados_quant,dummy_dados)
 dados_quant1 %>%
 rename( InternetService.Fiberoptic =`InternetService.Fiber optic`,
-Contract.Oneyear = `Contract.One year`,
+Contract.Contract.Oneyear = `Contract.One year`,
 Contract.Twoyear = `Contract.Two year`,
 PaymentMethod.Creditcard = `PaymentMethod.Credit card (automatic)`,
 PaymentMethod.Electronic = `PaymentMethod.Electronic check`,
