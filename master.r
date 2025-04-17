@@ -3,8 +3,6 @@ library(tidyverse)
 library(ggplot2)
 library(cowplot)
 library(corrplot)
-
-#ajustar erros de linhas de interpretação
 #carregando dados para o Data Frame (dados)
 dados <-read.csv("VIVO_CHURN.csv", stringsAsFactors = T)
 #Visualização dos dados
