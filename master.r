@@ -15,7 +15,7 @@ dados_1 <- dados[!is.na(dados$TotalCharges),]
 colSums(is.na(dados_1))
 glimpse(dados_1)
 
-#outliers - visualizar dispersão dos dados via boxplot #termino de aula 
+#outliers - visualizar dispersão dos dados via boxplot
 dados_1 %>%
 ggplot(aes(x=Churn,y=tenure, fill=Churn)) +
 geom_boxplot() + geom_jitter(width=0.1,alpha=0.2)
